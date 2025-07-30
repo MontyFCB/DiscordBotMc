@@ -4,7 +4,6 @@ from discord.ext import commands
 from mcstatus import JavaServer
 import os
 
-TOKEN = os.environ['MTQwMDAyNjU1OTcyODk3NTg3Mg.Gep3Sf.jlr8j6rMhG75MDjGWGT5dQ3TIQUhnIYf8sSZGs']
 SERVER_IP = "mc.angelup.eu"
 SERVER_PORT = 27727
 

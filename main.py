@@ -4,9 +4,9 @@ from discord.ext import commands
 from mcstatus import JavaServer
 import os
 
-TOKEN = os.environ['DISCORD_TOKEN']
+TOKEN = os.environ['MTQwMDAyNjU1OTcyODk3NTg3Mg.Gep3Sf.jlr8j6rMhG75MDjGWGT5dQ3TIQUhnIYf8sSZGs']
 SERVER_IP = "mc.angelup.eu"
-SERVER_PORT = 25565
+SERVER_PORT = 27727
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -35,4 +35,4 @@ async def status_command(interaction: discord.Interaction):
     except Exception:
         await interaction.response.send_message("🔴 Server je offline nebo nedostupný.")
 
-bot.run(TOKEN)
+bot.run(os.getenv("DISCORD_TOKEN"))
